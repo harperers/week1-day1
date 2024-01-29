@@ -80,6 +80,10 @@ input[type="submit"] {
 }
 main #album #photo img {
     width: 400px;
+    height: 400px;
+    border: #818db3 solid 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 footer {
     height: 40px;
@@ -88,3 +92,33 @@ footer {
     padding-top: 20px;
     color:rgb(211, 218, 240);
 }
+#album {
+    position:relative;
+    display:flex;
+    flex-wrap:wrap
+}
+#album:hover {
+
+}
+.description {
+    position: relative;
+    background-color:rgb(255, 255, 255, 75%);
+    width: 300px;
+    margin-left: 50px;
+    margin-right: 50px;
+    bottom:300px;
+    font-size:larger;
+    visibility: hidden;
+}
+li:hover .description {
+    visibility:visible;
+    cursor: pointer;
+}
+.caption {
+    width:400px;
+    position:relative;
+    left:130px;
+    bottom:30px;
+    font-weight:lighter
+}
+
