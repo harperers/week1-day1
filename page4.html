@@ -32,32 +32,24 @@
         <li id="photo"><img src="images/photo5.jpg"></li>
         <li id="photo"><img src="images/photo6.jpg"></li>-->
     </ul>
+    <section id="left">
+        <!-- <h1>Snow Land</h1>
+        <p>Most of plants and animals are having their hibernation period, so winter is not full of bright colors, but who says that white,snowy and a bit magical winter is not cool?</p>
+        <p class="close">Click This To Close</p> -->
+    </section>
+    <section id="middle">
+        <!-- <h1>Snow Land</h1>
+        <p>Most of plants and animals are having their hibernation period, so winter is not full of bright colors, but who says that white,snowy and a bit magical winter is not cool?</p>
+        <p class="close">Click This To Close</p> -->
+    </section>
+    <section id="right">
+        <!-- <h1>Snow Land</h1>
+        <p>Most of plants and animals are having their hibernation period, so winter is not full of bright colors, but who says that white,snowy and a bit magical winter is not cool?</p>
+        <p class="close">Click This To Close</p> -->
+    </section>
 </main>
 
+<script src="script.js"></script>
 <!-- Footer Information-->
 <footer>&copy; Copyright 2020</footer>
-
-<script>
-    var photos = []; //Declar an empty array to store image element
-    var fileNames = []; //Declare an empty element to store image file names
-    var imageList = []; //Declare an empty array to store html list that contain an image
-    var image; //Declare an empty variable to store the assembles image list codes
-    var openList = "<li id='photo'>"; //Declare a variable to contain open list tag
-    var closeList = "</li>"; //Declare a variable to contain close list tag
-    var openCaptionTag = "<h3 class='caption'>";
-    var closeCaptionTag = "</h3>";
-    var openDescTag = "<p class='description'>";
-    var closeDescTag = "</p>"; 
-    var captionTexts = ["FROSTY CANOPY", "SNOWSTORM PEAKS", "LONELY MOUNTAIN", "SUNSET CANYON", "AUTUMN TREES", "BENT TREE", "MOUNTAIN TRAILS", "BLURRY WINTER", "COLD WOODS", "SLED DOGS"];
-    var descTexts = ["The top of a frozen tree", "A snowstorm over several peaks", "A mountain standing alone", "A sunset hidden behind a canyon", "Autumn trees displayed side by side", "A tree that has been bent", "Trails shown going through a mountain", "A depiction of what to expect from hypothermia", "A desolate spot amidst the trees", "A sled being pulled by a team of dogs"];
-    //Crate a loop to create 6 images starting with index of 0
-    for (var i=0; i<10; i++) {
-        fileNames.push("photo"+(i+1)); //Create image file name and store in the array
-        photos.push("<img src ='images/" +fileNames[i]+".jpg'>"); //Assemble file name into image element and store in an array
-        image = openList + photos[i] + openCaptionTag + captionTexts[i] + closeCaptionTag + openDescTag + descTexts[i] + closeDescTag + closeList; //Assemble image element from array with list elements and store in a variable
-        imageList.push(image); //Store(push) the assembled list code into an array
-    }
-    //Display all six image codes stored in the array
-    document.getElementById("album").innerHTML = imageList.join(" ");
-</script>
 </div> <!-- End Container -->
