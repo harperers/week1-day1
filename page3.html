@@ -30,25 +30,30 @@
             <legend>User Personal information</legend>
             <label>Enter your full name</label>
             <input type="text" name="name">
-            <label>Enter your email</label>
-            <input type="email" name="email">
-            <label>Enter your phone</label>
-            <input type="text" name="phone">
             <label>Select your gender</label>
             <input type="radio" name="gender" value="male"/>Male
             <input type="radio" name="gender" value="female"/>Female
             <label>How should we contact you?</label>
-            <select>
-                <options>Email</options>
-                <option>Phone</option>
+            <select id="select">
+                <option id="emailoption" value="email">Email</option>
+                <option id="phoneoption" value="phone">Phone</option>
             </select>
+            <div id="email"> 
+                <label>Enter your email</label>
+                <input type="email" name="email">
+            </div>
+            <div id="phone"> 
+                <label>Enter your phone</label>
+                <input type="text" name="phone">
+            </div>
+            
             <label>Tell us the reason of your visit today:</label>
             <textarea rows="5" cols="30"></textarea>
             <input type="submit" value="sign-up">
         </fieldset>
     </form>
 </main>
-
+<script src="formscripts.js"></script>
 <!-- Footer Information-->
 <footer>&copy; Copyright 2020</footer>
 
